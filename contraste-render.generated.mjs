@@ -186,6 +186,9 @@ export const AUDITOR = () => {
    `cambiarTema(page)` la pone en oscuro. Cada app tiene su propio conmutador.
    `revisados`         excepciones decididas: { txt, motivo }. Se comparan por
                        inclusión para no depender de la traducción exacta.
+   `ruta`              dónde abre la app, si su `base` de Vite no es la raíz
+                       (Teacher's Utility Belt vive en /teachers-utility-belt/
+                       también en desarrollo, y en la raíz Vite contesta 404).
 
    POR QUÉ `pantallas` y no una sola vista: auditar donde quedó `conducir`
    daba un verde que solo valía para esa pantalla. Desgramatizador salía
@@ -194,7 +197,7 @@ export const AUDITOR = () => {
    de colores. Un chequeo que aprueba mirando un cuarto de la app es peor que
    no tenerlo, porque además da permiso para no mirar.
    -------------------------------------------------------------------------- */
-export async function correr({ nombre, puerto, conducir, pantallas, cambiarTema, revisados = [], viewport }) {
+export async function correr({ nombre, puerto, ruta = '', conducir, pantallas, cambiarTema, revisados = [], viewport }) {
   /* `npm i -D playwright` lo escribe en package.json, que es justo lo que NO
      puede pasar: el despliegue corre `npm ci` y se bajaría los navegadores en
      cada build. Se avisa aquí porque este es el único sitio donde alguien tiene
@@ -226,7 +229,7 @@ export async function correr({ nombre, puerto, conducir, pantallas, cambiarTema,
     process.exit(1);
   }
 
-  const url = `http://localhost:${puerto}`;
+  const url = `http://localhost:${puerto}${ruta}`;
   /* Por `npx` y con `shell:true`: resolver el binario de vite a mano falla
      porque su package.json no exporta `./bin/vite.js`, y la ruta de
      `node_modules/.bin` cambia de nombre entre Windows y Linux.
