@@ -11,7 +11,7 @@
    nombre en cada build y el fetch de red los va cacheando solos. */
 const CACHE_VERSION = 'v1';
 const CACHE_NAME = `grammaster-${CACHE_VERSION}`;
-const BASE = '/GramMaster/';
+const BASE = '/grammaster/';
 
 const urlsToCache = [
   BASE,

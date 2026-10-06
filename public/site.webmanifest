@@ -3,43 +3,43 @@
   "short_name": "Grammaster",
   "description": "Aprende inglés construyendo oraciones perfectas",
   "id": "/GramMaster/",
-  "start_url": "/GramMaster/",
-  "scope": "/GramMaster/",
+  "start_url": "/grammaster/",
+  "scope": "/grammaster/",
   "display": "standalone",
   "theme_color": "#6366F1",
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "/GramMaster/favicon-96x96.png",
+      "src": "/grammaster/favicon-96x96.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/GramMaster/web-app-manifest-192x192.png",
+      "src": "/grammaster/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/GramMaster/web-app-manifest-512x512.png",
+      "src": "/grammaster/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/GramMaster/maskable-192x192.png",
+      "src": "/grammaster/maskable-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/GramMaster/maskable-512x512.png",
+      "src": "/grammaster/maskable-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/GramMaster/apple-touch-icon.png",
+      "src": "/grammaster/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "any"

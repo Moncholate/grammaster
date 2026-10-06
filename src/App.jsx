@@ -3971,7 +3971,7 @@ const EnglishSentenceBuilder = () => {
               de que el botón de Reportar se vaya fuera del borde, que ceda el
               título. */}
           <div className="flex items-center gap-3 min-w-0">
-            <img src="/GramMaster/logo.svg" alt="Grammaster" className="w-9 h-9 sm:w-10 sm:h-10 shrink-0 rounded-[22%]" />
+            <img src="/grammaster/logo.svg" alt="Grammaster" className="w-9 h-9 sm:w-10 sm:h-10 shrink-0 rounded-[22%]" />
             <div className="min-w-0">
               <h1 className="text-lg sm:text-xl font-bold text-gray-800 truncate">{t.title}</h1>
               <p className="text-xs text-muted hidden sm:block">{language === 'es' ? 'Los tiempos en la palma de tu mano.' : 'English tenses at your fingertips.'}</p>

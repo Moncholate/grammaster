@@ -26,7 +26,7 @@ export default defineConfig({
   define: {
     __APP_BUILD__: JSON.stringify(versionDelCommit()),
   },
-  base: '/GramMaster/',
+  base: '/grammaster/',
   server: {
     port: 5174,
     open: false
